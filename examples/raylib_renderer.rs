@@ -58,6 +58,8 @@ pub fn main() {
 
         let commands = clay.end();
 
-        clay_raylib_render(&mut d, commands, |_, _| {})
+        let fonts = Vec::new();
+
+        clay_raylib_render(&mut d, commands, &fonts,|_, _| {})
     }
 }
